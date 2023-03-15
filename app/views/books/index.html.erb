@@ -71,7 +71,7 @@
       
       <h2>New Book</h2>
       <!-- form_with部分 -->
-      <%= form_with model: List.new do |f| %>
+      <%= form_with model: List.new,url:books_path do |f| %>
       <div class="title">
         Title<br>
         <%= f.text_field :title %>
